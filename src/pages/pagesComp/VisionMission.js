@@ -9,7 +9,7 @@ const items = [
       borderColor: "border-red-500",
       color: "from-red-500/90 to-red-400/70",
       text: (
-        <ul className="text-gray-600 text-sm leading-relaxed text-left list-disc list-inside space-y-2">
+        <ul className="text-gray-600 text-sm leading-relaxed text-left list-disc space-y-2">
           <li>Deliver exceptional education across engineering, management, law, health sciences, liberal arts, and emerging areas.</li>
           <li>Foster industry engagement, research, entrepreneurship, and practical skills (skilling, internships, placements).</li>
           <li>Prioritize student-centric, inclusive approaches for lifelong learning and societal impact.</li>
@@ -30,7 +30,7 @@ const items = [
       borderColor: "border-amber-500",
       color: "from-amber-500/90 to-amber-400/70",
       text: (
-        <ul className="text-gray-600 text-sm leading-relaxed text-left list-disc list-inside space-y-2">
+        <ul className="text-gray-600 text-sm leading-relaxed text-left list-disc space-y-2">
           <li><strong>Excellence:</strong> Unwavering commitment to quality in teaching, research, and campus life.</li>
           <li><strong>Integrity:</strong> Transparency, ethics, and fairness in all dealings.</li>
           <li><strong>Inclusivity:</strong> Cultivate a diverse, welcoming environment for students and staff.</li>
