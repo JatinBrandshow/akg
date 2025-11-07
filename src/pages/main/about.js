@@ -58,9 +58,9 @@ export default function About() {
                 <div className="absolute inset-0 bg-black opacity-60"></div>
 
                 {/* Content Area */}
-                <div className="relative z-10 flex flex-col-reverse lg:flex-row lg:items-center lg:justify-evenly w-full min-h-screen px-6 lg:px-20 py-10 gap-10">
+                <div className="relative z-10 flex flex-col-reverse lg:flex-row lg:items-center lg:justify-end w-full min-h-screen px-6 lg:px-20 py-10 gap-10">
                     {/* Left Box - Bullet List */}
-                    <motion.div className="bg-[#56397d] shadow-md rounded-lg w-full lg:w-[45%] p-6 text-left overflow-hidden" initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, ease: "easeOut" }}>
+                    {/* <motion.div className="bg-[#56397d] shadow-md rounded-lg w-full lg:w-[45%] p-6 text-left overflow-hidden" initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.8, ease: "easeOut" }}>
                         <ul className="list-disc pl-5 text-white text-[13px] space-y-2 text-justify">
                             <li>AKGU, Ghaziabad, is affiliated with Dr. A.P.J. Abdul Kalam Technical University, Lucknow, and approved by the AICTE.</li>
                             <li>
@@ -78,7 +78,7 @@ export default function About() {
                             <li>AKGU emphasizes industry collaboration, with partnerships for student training, consultancy projects, and research in emerging technologies like Automation and Robotics.</li>
                             <li>AKGU maintains transparent policies and systems, setting high standards and goals in all its activities.</li>
                         </ul>
-                    </motion.div>
+                    </motion.div> */}
 
                     {/* Right Box - Heading and Description */}
                     <motion.div
@@ -183,8 +183,7 @@ export default function About() {
             </motion.section>
 
             {/* Section 4 */}
-            <motion.section className="relative w-full min-h-screen flex items-center justify-center" style={{ overflow: "hidden" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-                {/* Background Image with Opacity Overlay */}
+            {/* <motion.section className="relative w-full min-h-screen flex items-center justify-center" style={{ overflow: "hidden" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
@@ -193,10 +192,7 @@ export default function About() {
                 >
                     <div className="absolute inset-0 bg-black opacity-60"></div>
                 </div>
-
-                {/* Container for Flex Layout */}
                 <div className="lg:flex lg:w-full w-full relative z-10 flex-col lg:flex-row lg:gap-x-10">
-                    {/* Left Box (Leading Academic Institution) */}
                     <div className="lg:w-1/2 w-full flex items-center justify-center relative z-10 p-10 lg:mx-40">
                         <div className="bg-white shadow-lg p-8 flex flex-col items-center justify-center">
                             <h1 className="text-4xl sm:text-3xl max-sm:text-2xl font-normal text-center mb-10">Leading Academic Institution</h1>
@@ -212,11 +208,9 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* Right Box (Program Features) */}
                     <div className="lg:w-full w-full flex justify-center items-center relative z-10 mb-10 lg:mb-0">
                         <div className="h-64 max-sm:h-44 w-[99%] max-xl:w-full relative z-10 max-xl:flex max-xl:justify-center max-xl:items-center">
                             <div className="w-1/2 max-xl:w-1/2 max-sm:w-full max-sm:mx-3 h-full bg-white flex rounded-lg shadow-lg">
-                                {/* Text Section */}
                                 <div className="text-center text-[14px] font-serif flex flex-col w-1/2 border-r border-gray-300">
                                     {programFeatures?.map((item, index) => (
                                         <a
@@ -229,7 +223,6 @@ export default function About() {
                                     ))}
                                 </div>
 
-                                {/* Image Section */}
                                 <div className="w-1/2 flex items-center justify-center">
                                     <img src={programFeatures[activeIndex].imgSrc} alt={programFeatures[activeIndex].text} className="max-w-full max-h-full object-contain" />
                                 </div>
@@ -237,7 +230,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </motion.section>
+            </motion.section> */}
 
             {/* Section 5 */}
             {/* <motion.section className="relative w-full min-h-screen flex items-center justify-center" style={{ overflow: "hidden" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
