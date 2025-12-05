@@ -1,7 +1,8 @@
 "use client";
+import Breadcrumb from "@/Components/Breadcrumb";
 import React, { useState } from "react";
 
-const RecognitionApprovals = () => {
+const RecognitionApprovals = ({data}) => {
     const [selectedRecognition, setSelectedRecognition] = useState("naac");
 
     const recognitionsData = [
@@ -53,6 +54,9 @@ const RecognitionApprovals = () => {
                     </div>
                 </div>
             </div>
+             <section className='max-w-[1400px] mx-auto px-5 max-sm:px-2 py-5'>
+                                                {data?.breadCrumb && <Breadcrumb data={data?.breadCrumb} />}
+                                            </section>
             <div className="bg-BG17 h-[450px] w-full top-20 bg-no-repeat bg-cover">
                 <div className="max-w-[1400px] mx-auto h-full px-3">
                     <div className="max-w-2xl">
