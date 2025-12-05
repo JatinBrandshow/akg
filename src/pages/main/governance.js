@@ -18,7 +18,9 @@ export const Home = ({ data }) => {
         <>
             <div className="bg-gray-100">
                 <Header title={"Governance"} bgKey="BG-Building-9" position="top" gradient={"bg-gradient-to-r from-blue-900 to-blue-900/40"} />
-              
+                <section className='max-w-[1400px] mx-auto px-5 max-sm:px-2 py-5'>
+                    {data?.breadCrumb && <Breadcrumb data={data?.breadCrumb} />}
+                </section>
                 <section className="w-full max-w-[1400px] mx-auto grid grid-cols-12 py-10 max-sm:py-2 gap-10 px-2 max-sm:gap-0">
                     <div className="col-span-9 max-xl:col-span-8 max-lg:col-span-12">
                         <Governance />

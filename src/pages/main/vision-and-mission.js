@@ -1,7 +1,8 @@
 import Header from "@/Components/Header";
 import SideBar from "@/Components/SideBar";
-import VisionAndMission from "../pagesComp/VisionMission";
+
 import Breadcrumb from "@/Components/Breadcrumb";
+import AboutSection from "../pagesComp/VisionMission";
 
 const SideBarLink = [
     { name: "Our Identity", link: "/overview" },
@@ -24,7 +25,7 @@ export const Home = ({ data }) => {
                 <section className='max-w-[1400px] mx-auto px-5 max-sm:px-2 py-5'>
                     {data?.breadCrumb && <Breadcrumb data={data?.breadCrumb} />}
                 </section>
-                <VisionAndMission />
+                <AboutSection />
             </div>
         </>
     );
